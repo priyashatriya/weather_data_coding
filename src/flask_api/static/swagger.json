@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "description": "webAPI",
+        "version": "1.0",
+        "title": "Coding Assesment",
+        "contact": {
+            "email": "mytestemail@gmail.com"
+        },
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "servers": [
+        {
+            "url": "/"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Swagger ",
+            "description": "This is Swagger document"
+        }
+    ],
+    "paths": {
+        "/api/weather/": {
+            "get": {
+                "tags": [
+                    "weather"
+                ],
+                "summary": "This will return weather data",
+                "responses": {
+                    "200": {
+                        "description": "This will return weather data"
+                    }
+                }
+            }
+        },
+        "/api/weather/stats/": {
+            "get": {
+                "tags": [
+                    "weather"
+                ],
+                "summary": "This will return analytics data for weather ",
+                "responses": {
+                    "200": {
+                        "description": "This will return weather data"
+                    }
+                }
+            }
+        }
+    }
+}

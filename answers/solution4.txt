@@ -1,0 +1,28 @@
+Problem 4 - REST API
+--------------------
+Choose a web framework (e.g. Flask, Django REST Framework). Create a REST API with the following GET endpoints:
+
+/api/weather
+/api/weather/stats
+
+Both endpoints should return a JSON-formatted response with a representation of the ingested/calculated data in your database. Allow clients to filter the response by date and station ID (where present) using the query string. Data should be paginated.
+
+Include a Swagger/OpenAPI endpoint that provides automatic documentation of your API.
+
+Your answer should include all files necessary to run your API locally, along with any unit tests.
+
+===================================================ANSWER==============================================================
+here, we need to create REST API, so I have created flask APP 
+
+I have also added swagger document for the API that have been created 
+
+API's are 
+/swagger
+/api/weather/
+/api/weather/stats/
+
+and Command to start FLASK app is 
+GOTO src/flask_api
+python app.py 
+
+---

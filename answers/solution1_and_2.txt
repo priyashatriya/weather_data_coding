@@ -1,0 +1,18 @@
+Problem 1 - Data Modeling
+-------------------------
+Choose a database to use for this coding exercise (SQLite, Postgres, etc.). Design a data model to represent the weather data records. If you use an ORM, your answer should be in the form of that ORM's data definition format. If you use pure SQL, your answer should be in the form of DDL statements.
+
+Problem 2 - Ingestion
+---------------------
+Write code to ingest the weather data from the raw text files supplied into your database, using the model you designed. Check for duplicates: if your code is run twice, you should not end up with multiple rows with the same data in your database. Your code should also produce log output indicating start and end times and number of records ingested.
+
+
+=======================================ANSWER=================================================
+
+I have combine the Data model and Data ingestion process 
+
+build_and_insert_data.py, create data models by reading ddl from ddl directory and create new data tables in sqllite database
+and it reads all files from wx_data and yld_data and insert them to those tables 
+
+
+command: python build_and_insert_data.py
